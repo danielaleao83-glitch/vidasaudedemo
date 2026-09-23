@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:dadoTransporteTransportXml xmlns:ns2="http://esus.ufsc.br/dadoinstalacao" xmlns:ns3="http://esus.ufsc.br/dadotransporte" xmlns:ns4="http://esus.ufsc.br/cadastrodomiciliar">
+	<uuidDadoSerializado>0019615-1bb84623-72c6-4300-b505-c7c6b84ae661</uuidDadoSerializado>
+	<tipoDadoSerializado>3</tipoDadoSerializado>
+	<codIbge>4205407</codIbge>
+	<cnesDadoSerializado>0019615</cnesDadoSerializado>
+	<ineDadoSerializado>0000471828</ineDadoSerializado>
+	<numLote>61</numLote>
+	<ns4:cadastroDomiciliarTransport>
+		<condicaoMoradia>
+			<abastecimentoAgua>117</abastecimentoAgua>
+			<destinoLixo>96</destinoLixo>
+			<formaEscoamentoBanheiro>123</formaEscoamentoBanheiro>
+			<localizacao>83</localizacao>
+			<nuMoradores>5</nuMoradores>
+			<stDisponibilidadeEnergiaEletrica>true</stDisponibilidadeEnergiaEletrica>
+			<tipoOrigemEnergiaEletrica>230</tipoOrigemEnergiaEletrica>
+			<aguaConsumoDomicilio>98</aguaConsumoDomicilio>
+		</condicaoMoradia>
+		<tipoEndereco>3</tipoEndereco>
+		<enderecoLocalPermanencia>
+			<bairro>TRINDADE</bairro>
+			<cep>88036400</cep>
+			<codigoIbgeMunicipio>4205407</codigoIbgeMunicipio>
+			<complemento>CASA</complemento>
+			<nomeLogradouro>LUIZ OSCAR DE CARVALHO</nomeLogradouro>
+			<numero>122</numero>
+			<numeroDneUf>25</numeroDneUf>
+			<telefoneContato>48994899948</telefoneContato>
+			<tipoLogradouroNumeroDne>081</tipoLogradouroNumeroDne>
+			<stSemNumero>false</stSemNumero>
+			<pontoReferencia>UNIVERSIDADE</pontoReferencia>
+			<microArea>03</microArea>
+			<stForaArea>false</stForaArea>
+		</enderecoLocalPermanencia>
+		<fichaAtualizada>false</fichaAtualizada>
+		<statusTermoRecusa>false</statusTermoRecusa>
+		<tpCdsOrigem>3</tpCdsOrigem>
+		<uuid>0019615-1bb84623-72c6-4300-b505-c7c6b84ae661</uuid>
+		<uuidFichaOriginadora>0019615-1bb84623-72c6-4300-b505-c7c6b84ae661</uuidFichaOriginadora>
+		<tipoDeImovel>7</tipoDeImovel>
+		<instituicaoPermanencia>
+			<nomeInstituicaoPermanencia>INSTITUIÇÃO DE PERMANÊNCIA</nomeInstituicaoPermanencia>
+			<stOutrosProfissionaisVinculados>true</stOutrosProfissionaisVinculados>
+			<nomeResponsavelTecnico>JOSÉ DA SILVA</nomeResponsavelTecnico>
+			<cnsResponsavelTecnico>192308788760001</cnsResponsavelTecnico>
+			<cargoInstituicao>ADMINISTRADOR</cargoInstituicao>
+			<telefoneResponsavelTecnico>48919191919</telefoneResponsavelTecnico>
+		</instituicaoPermanencia>
+		<headerTransport>
+			<profissionalCNS>700609923387762</profissionalCNS>
+			<cboCodigo_2002>515105</cboCodigo_2002>
+			<cnes>0019615</cnes>
+			<ine>0000471828</ine>
+			<dataAtendimento>1549206000000</dataAtendimento>
+			<codigoIbgeMunicipio>4205407</codigoIbgeMunicipio>
+		</headerTransport>
+	</ns4:cadastroDomiciliarTransport>
+	<ns2:remetente>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>5.0.16</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:remetente>
+	<ns2:originadora>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>5.0.16</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:originadora>
+	<versao major="6" minor="3" revision="2" />
+</ns3:dadoTransporteTransportXml>

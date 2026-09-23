@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:dadoTransporteTransportXml xmlns:ns2="http://esus.ufsc.br/dadoinstalacao" xmlns:ns3="http://esus.ufsc.br/dadotransporte" xmlns:ns4="http://esus.ufsc.br/fichacomplementarzikamicrocefalia">
+	<uuidDadoSerializado>0019615-f4718f9b-2d1d-4072-b94c-77c6b78c5218</uuidDadoSerializado>
+	<tipoDadoSerializado>13</tipoDadoSerializado>
+	<codIbge>4205407</codIbge>
+	<cnesDadoSerializado>0019615</cnesDadoSerializado>
+	<ineDadoSerializado>0000471828</ineDadoSerializado>
+	<numLote>8</numLote>
+	<ns4:fichaComplementarZikaMicrocefaliaTransport>
+		<headerTransport>
+			<profissionalCNS>700609923387762</profissionalCNS>
+			<cboCodigo_2002>225142</cboCodigo_2002>
+			<cnes>0019615</cnes>
+			<ine>0000471828</ine>
+			<dataAtendimento>1551106800000</dataAtendimento>
+			<codigoIbgeMunicipio>4205407</codigoIbgeMunicipio>
+		</headerTransport>
+		<uuidFicha>0019615-f4718f9b-2d1d-4072-b94c-77c6b78c5218</uuidFicha>
+		<tpCdsOrigem>3</tpCdsOrigem>
+		<turno>1</turno>
+		<stCidadaoNaoPossuiCpf>true</stCidadaoNaoPossuiCpf>
+		<justificativaCidadaoNaoPossuiCpf>3</justificativaCidadaoNaoPossuiCpf>
+		<cpfResponsavelFamiliar>68688625042</cpfResponsavelFamiliar>
+		<dataRealizacaoTesteOlhinho>1551106800000</dataRealizacaoTesteOlhinho>
+		<coResultadoTesteOlhinho>1</coResultadoTesteOlhinho>
+		<dataRealizacaoExameFundoOlho>1550674800000</dataRealizacaoExameFundoOlho>
+		<coResultadoExameFundoOlho>3</coResultadoExameFundoOlho>
+		<dataRealizacaoTesteOrelhinha>1550242800000</dataRealizacaoTesteOrelhinha>
+		<coResultadoTesteOrelhinha>5</coResultadoTesteOrelhinha>
+		<dataRealizacaoUSTransfontanela>1549810800000</dataRealizacaoUSTransfontanela>
+		<coResultadoUsTransfontanela>7</coResultadoUsTransfontanela>
+		<dataRealizacaoTomografiaComputadorizada>1549378800000</dataRealizacaoTomografiaComputadorizada>
+		<coResultadoTomografiaComputadorizada>13</coResultadoTomografiaComputadorizada>
+		<dataRealizacaoRessonanciaMagnetica>1549033200000</dataRealizacaoRessonanciaMagnetica>
+		<coResultadoRessonanciaMagnetica>15</coResultadoRessonanciaMagnetica>
+	</ns4:fichaComplementarZikaMicrocefaliaTransport>
+	<ns2:remetente>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>5.0.16</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:remetente>
+	<ns2:originadora>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>5.0.16</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:originadora>
+	<versao major="4" minor="4" revision="1" />
+</ns3:dadoTransporteTransportXml>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:dadoTransporteTransportXml xmlns:ns2="http://esus.ufsc.br/dadoinstalacao" xmlns:ns3="http://esus.ufsc.br/dadotransporte" xmlns:ns4="http://esus.ufsc.br/cadastrodomiciliar">
+	<uuidDadoSerializado>0019615-1bb84623-72c6-4300-b505-c7c6b84ae662</uuidDadoSerializado>
+	<tipoDadoSerializado>3</tipoDadoSerializado>
+	<codIbge>4205407</codIbge>
+	<cnesDadoSerializado>0019615</cnesDadoSerializado>
+	<ineDadoSerializado>0000471828</ineDadoSerializado>
+	<numLote>62</numLote>
+	<ns4:cadastroDomiciliarTransport>
+		<tipoEndereco>3</tipoEndereco>
+		<enderecoLocalPermanencia>
+			<bairro>ITACORUBI</bairro>
+			<cep>88036400</cep>
+			<codigoIbgeMunicipio>4205407</codigoIbgeMunicipio>
+			<complemento>CASA</complemento>
+			<nomeLogradouro>AMARO ANTÔNIO VIEIRA</nomeLogradouro>
+			<numero>10</numero>
+			<numeroDneUf>25</numeroDneUf>
+			<telefoneContato>48994899948</telefoneContato>
+			<telefoneResidencia>99999999999</telefoneResidencia>
+			<tipoLogradouroNumeroDne>081</tipoLogradouroNumeroDne>
+			<stSemNumero>false</stSemNumero>
+			<pontoReferencia>POSTO DE SAÚDE</pontoReferencia>
+			<microArea>FA</microArea>
+			<stForaArea>true</stForaArea>
+		</enderecoLocalPermanencia>
+		<latitude>89.12345678</latitude>
+		<longitude>179.12345678</longitude>
+		<fichaAtualizada>false</fichaAtualizada>
+		<statusTermoRecusa>true</statusTermoRecusa>
+		<tpCdsOrigem>3</tpCdsOrigem>
+		<uuid>0019615-1bb84623-72c6-4300-b505-c7c6b84ae662</uuid>
+		<uuidFichaOriginadora>0019615-1bb84623-72c6-4300-b505-c7c6b84ae662</uuidFichaOriginadora>
+		<tipoDeImovel>1</tipoDeImovel>
+		<instituicaoPermanencia />
+		<headerTransport>
+			<profissionalCNS>700609923387762</profissionalCNS>
+			<cboCodigo_2002>515105</cboCodigo_2002>
+			<cnes>0019615</cnes>
+			<ine>0000471828</ine>
+			<dataAtendimento>1549206000000</dataAtendimento>
+			<codigoIbgeMunicipio>4205407</codigoIbgeMunicipio>
+		</headerTransport>
+	</ns4:cadastroDomiciliarTransport>
+	<ns2:remetente>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>5.0.16</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:remetente>
+	<ns2:originadora>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>5.0.16</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:originadora>
+	<versao major="6" minor="3" revision="2" />
+</ns3:dadoTransporteTransportXml>

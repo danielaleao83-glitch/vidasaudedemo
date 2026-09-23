@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+/* =========================================================
+   BASE DO SISTEMA
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================================
+   AJUSTE COMPLETO — TELA DE LOGIN VIDA | SAÚDE
+   ========================================================= */
+
+/* Página inteira sem rolagem */
+.page {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LADO ESQUERDO
+   ========================================================= */
+
+.brand-panel {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 70px;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Conteúdo esquerdo */
+.brand-panel > * {
+    transform: none;
+}
+
+
+/* =========================================================
+   LADO DIREITO
+   ========================================================= */
+
+.login-panel {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 70px;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Caixa do login */
+.login-box {
+    width: min(470px, 100%);
+    max-width: 470px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TÍTULO DO LOGIN
+   ========================================================= */
+
+.login-title {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.field {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.field input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOTÃO ENTRAR
+   ========================================================= */
+
+.login-box button[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CORAÇÃO / ELEMENTO 3D
+   ========================================================= */
+
+.heart-visual {
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SAIR
+   ========================================================= */
+
+/*
+   O botão Sair deixa de participar do fluxo do formulário
+   e passa a ficar preso ao canto inferior direito da página.
+*/
+
+.login-exit {
+    position: fixed !important;
+
+    right: 24px !important;
+    bottom: 20px !important;
+
+    left: auto !important;
+    top: auto !important;
+
+    margin: 0 !important;
+
+    z-index: 9999;
+
+    width: auto !important;
+    max-width: none !important;
+
+    transform: none !important;
+}
+
+/* Link/botão interno do Sair */
+.login-exit a,
+.login-exit button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   GARANTE QUE O SAIR NÃO SEJA EMPURRADO PELO FORMULÁRIO
+   ========================================================= */
+
+.login-panel .login-exit {
+    align-self: auto;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .page {
+        grid-template-columns: 1fr;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .brand-panel {
+        height: auto;
+        min-height: 45vh;
+        padding: 35px 30px;
+    }
+
+    .login-panel {
+        height: auto;
+        min-height: 55vh;
+        padding: 35px 30px 80px;
+    }
+
+    .login-box {
+        width: min(470px, 100%);
+    }
+
+    .login-exit {
+        right: 18px !important;
+        bottom: 15px !important;
+    }
+}
+
+
+/* =========================================================
+   TELAS MENORES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+
+    .page {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .brand-panel {
+        min-height: 42vh;
+        padding: 30px 22px;
+    }
+
+    .login-panel {
+        min-height: 58vh;
+        padding: 25px 22px 80px;
+    }
+
+    .login-box {
+        max-width: 100%;
+    }
+
+    .login-exit {
+        right: 16px !important;
+        bottom: 14px !important;
+    }
+}
