@@ -1,58 +1,307 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Vida|Saúde Demo
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> Plataforma demonstrativa para gestão assistencial, atendimento, triagem, fila de pacientes e prontuário eletrônico, desenvolvida com Laravel.
 
-## About Laravel
+## Sobre o projeto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O **Vida|Saúde** é um projeto demonstrativo voltado à modernização da gestão em saúde, integrando informações assistenciais e operacionais em uma única aplicação.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+A proposta é demonstrar uma experiência de atendimento mais conectada, organizada e segura, permitindo acompanhar o fluxo do paciente desde o atendimento e a triagem até o prontuário eletrônico.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Este repositório contém a versão **Demo** do projeto, utilizada para desenvolvimento, testes e apresentação da solução.
 
-## Learning Laravel
+## Funcionalidades
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Autenticação
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Login de usuário
+* Logout
+* Recuperação de senha
+* Redefinição de senha
+* Interface de acesso personalizada
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### Gestão de pacientes
 
-## Agentic Development
+* Cadastro de pacientes
+* Listagem de pacientes
+* Visualização das informações do paciente
+* Integração com a camada de domínio de pacientes
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### Atendimento
 
-```bash
-composer require laravel/boost --dev
+* Registro de atendimentos
+* Controle do status do atendimento
+* Geração e utilização de senha de atendimento
+* Controle de prioridade
+* Observações do atendimento
 
-php artisan boost:install
+### Triagem
+
+* Controle da fila de pacientes aguardando triagem
+* Registro das informações de triagem
+* Organização do fluxo assistencial
+
+### Fila de atendimento
+
+A aplicação possui um painel de fila destinado ao controle e chamada dos pacientes.
+
+A apresentação pública da chamada foi pensada para preservar informações do paciente, exibindo apenas os dados necessários para identificação no momento da chamada, como:
+
+* Senha
+* Primeiro nome
+* Sala ou consultório
+
+O painel não exibe informações clínicas ou especialidades médicas ao público.
+
+### Prontuário eletrônico
+
+* Consulta do prontuário
+* Registro clínico
+* Visualização do histórico assistencial
+* Registro de diagnóstico
+* Estrutura preparada para evolução do projeto
+
+### Integração e-SUS
+
+O projeto também possui materiais e estruturas relacionados à integração com o **e-SUS APS**, incluindo:
+
+* XSD
+* XML
+* Thrift
+* Estruturas geradas para os formatos de atendimento e cadastro
+
+Os arquivos estão organizados em:
+
+```text
+resources/esus/
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+e
 
-## Contributing
+```text
+app/Support/Esus/
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Tecnologias
 
-## Code of Conduct
+* **PHP**
+* **Laravel**
+* **Blade**
+* **Vite**
+* **JavaScript**
+* **CSS**
+* **Eloquent ORM**
+* **Git / GitHub**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Estrutura do projeto
 
-## Security Vulnerabilities
+```text
+app/
+├── Domain/
+├── Http/
+├── Models/
+├── Providers/
+└── Support/
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+database/
+├── factories/
+├── migrations/
+└── seeders/
 
-## License
+resources/
+├── css/
+├── js/
+├── esus/
+└── views/
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+routes/
+└── web.php
+
+public/
+└── index.php
+```
+
+## Principais módulos
+
+```text
+Login
+  ↓
+Dashboard
+  ↓
+Pacientes
+  ↓
+Atendimento
+  ↓
+Triagem
+  ↓
+Fila
+  ↓
+Prontuário
+  ↓
+Registro Clínico
+```
+
+## Requisitos
+
+Para executar o projeto localmente, tenha instalado:
+
+* PHP
+* Composer
+* Node.js e npm
+* Banco de dados compatível com a configuração do projeto
+* Git
+
+## Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/danielaleao83-glitch/vidasaudedemo.git
+```
+
+Entre na pasta:
+
+```bash
+cd vidasaudedemo
+```
+
+Instale as dependências PHP:
+
+```bash
+composer install
+```
+
+Instale as dependências JavaScript:
+
+```bash
+npm install
+```
+
+Crie o arquivo de ambiente:
+
+```bash
+cp .env.example .env
+```
+
+No Windows PowerShell, pode ser utilizado:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Gere a chave da aplicação:
+
+```bash
+php artisan key:generate
+```
+
+Configure no arquivo `.env` os parâmetros do banco de dados.
+
+Execute as migrations:
+
+```bash
+php artisan migrate
+```
+
+Execute o frontend em desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Em outro terminal, inicie o servidor Laravel:
+
+```bash
+php artisan serve
+```
+
+A aplicação estará disponível em:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Build de produção
+
+Para gerar os arquivos de frontend:
+
+```bash
+npm run build
+```
+
+## Banco de dados
+
+As migrations do projeto contemplam, entre outras estruturas:
+
+* Usuários
+* Pacientes
+* Atendimentos
+* Triagens
+* Registros clínicos
+* Cache
+* Jobs
+
+As migrations estão localizadas em:
+
+```text
+database/migrations/
+```
+
+## Segurança
+
+Informações sensíveis de ambiente não são versionadas no Git.
+
+O arquivo:
+
+```text
+.env
+```
+
+está protegido pelo `.gitignore`.
+
+O repositório disponibiliza:
+
+```text
+.env.example
+```
+
+como modelo de configuração.
+
+Para uma implantação real, devem ser adotadas configurações adicionais de segurança, autenticação, autorização, proteção de dados, infraestrutura e armazenamento.
+
+## Status do projeto
+
+**Vida|Saúde Demo — em desenvolvimento**
+
+Esta versão tem finalidade demonstrativa e serve como base para evolução das funcionalidades assistenciais, integrações e componentes da plataforma.
+
+## Objetivos futuros
+
+Entre as possibilidades de evolução estão:
+
+* Aperfeiçoamento do prontuário eletrônico
+* Ampliação da integração com e-SUS APS
+* Controle de perfis e permissões
+* Auditoria de operações
+* Melhorias no fluxo assistencial
+* Painéis gerenciais
+* Notificações e comunicação em tempo real
+* Integrações com outros sistemas de saúde
+
+## Autoria
+
+**Vida|Saúde**
+
+Projeto desenvolvido para demonstração de uma plataforma integrada de gestão e atendimento em saúde.
+
+## Licença
+
+Este projeto é disponibilizado para fins demonstrativos e de desenvolvimento.
+
+---
+
+### Vida|Saúde
+
+**Tecnologia em saúde**
+
+Inteligência para uma saúde mais conectada.
