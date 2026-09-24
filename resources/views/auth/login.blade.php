@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida|Saúde — Prontuário Eletrônico</title>
+    <title>Vida|SaÃºde â€” ProntuÃ¡rio EletrÃ´nico</title>
 
     <style>
         * {
@@ -38,7 +38,7 @@
         }
 
         /* =========================
-           ÁREA DA MARCA
+           ÃREA DA MARCA
            ========================= */
 
         .brand-panel {
@@ -172,7 +172,7 @@
         }
 
         /* =========================
-           CORAÇÃO 3D
+           CORAÃ‡ÃƒO 3D
            ========================= */
 
         .heart-visual {
@@ -569,7 +569,7 @@
         }
 
         /* =========================================================
-           AJUSTE VISUAL FINAL — VIDA|SAÚDE
+           AJUSTE VISUAL FINAL â€” VIDA|SAÃšDE
            ========================================================= */
 
         @media (min-width: 901px) {
@@ -680,7 +680,7 @@
         }
 
         /* =========================================================
-           AJUSTE DE COMPOSIÇÃO — LOGIN VIDA|SAÚDE
+           AJUSTE DE COMPOSIÃ‡ÃƒO â€” LOGIN VIDA|SAÃšDE
            ========================================================= */
 
         @media (min-width: 901px) {
@@ -837,7 +837,7 @@
         }
 
         /* =========================================================
-           COMPOSIÇÃO FINAL — FORMULÁRIO E RODAPÉ
+           COMPOSIÃ‡ÃƒO FINAL â€” FORMULÃRIO E RODAPÃ‰
            ========================================================= */
 
         @media (min-width: 901px) {
@@ -988,32 +988,32 @@
                 </div>
 
                 <div class="brand-name-text">
-                    <span class="vida">Vida</span><span class="separator">|</span><span class="saude">Saúde</span>
+                    <span class="vida">Vida</span><span class="separator">|</span><span class="saude">SaÃºde</span>
                 </div>
 
             </div>
 
             <div class="eyebrow">
                 <span class="eyebrow-dot"></span>
-                Tecnologia em saúde
+                Tecnologia em saÃºde
             </div>
 
             <h1 class="brand-title">
-                Inteligência para uma<br>
-                <span>saúde mais conectada.</span>
+                InteligÃªncia para uma<br>
+                <span>saÃºde mais conectada.</span>
             </h1>
 
             <p class="brand-description">
-                Plataforma integrada para gestão assistencial,
-                atendimento e prontuário eletrônico, conectando
-                informação clínica, operação e cuidado.
+                Plataforma integrada para gestÃ£o assistencial,
+                atendimento e prontuÃ¡rio eletrÃ´nico, conectando
+                informaÃ§Ã£o clÃ­nica, operaÃ§Ã£o e cuidado.
             </p>
 
             <div class="brand-footer">
                 <span class="brand-footer-line"></span>
-                <span>Prontuário Eletrônico</span>
+                <span>ProntuÃ¡rio EletrÃ´nico</span>
                 <span></span>
-                <span>Gestão Assistencial</span>
+                <span>GestÃ£o Assistencial</span>
             </div>
 
         </div>
@@ -1099,8 +1099,8 @@
 
                     <div class="password-rules">
                         <div class="password-rule">6 a 8 caracteres</div>
-                        <div class="password-rule">1 letra maiúscula</div>
-                        <div class="password-rule">1 número</div>
+                        <div class="password-rule">1 letra maiÃºscula</div>
+                        <div class="password-rule">1 nÃºmero</div>
                         <div class="password-rule">1 caractere especial</div>
                     </div>
                 </div>
@@ -1118,8 +1118,8 @@
             </form>
 
             <div class="register-link">
-                Ainda não possui acesso?
-                <a href="#">
+                Ainda nÃ£o possui acesso?
+                <a href="{{ route('register') }}">
                     Criar conta
                 </a>
             </div>
@@ -1130,7 +1130,7 @@
                     <path d="m9.5 12 1.7 1.7 3.5-3.7"/>
                 </svg>
 
-                Ambiente protegido para informações de saúde
+                Ambiente protegido para informaÃ§Ãµes de saÃºde
             </div>
 
             <div class="login-exit">
