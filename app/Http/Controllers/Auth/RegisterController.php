@@ -8,7 +8,6 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
 
 class RegisterController extends Controller
@@ -22,7 +21,7 @@ class RegisterController extends Controller
     {
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:120'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email'],
+            'email' => ['required', 'email', 'max:255', 'unique:users,email'],
             'password' => [
                 'required',
                 'string',
@@ -41,7 +40,7 @@ class RegisterController extends Controller
             'password.min' => 'A senha deve ter no mínimo 6 caracteres.',
             'password.max' => 'A senha deve ter no máximo 8 caracteres.',
             'password.confirmed' => 'A confirmação da senha não confere.',
-            'password.regex' => 'A senha deve conter 1 letra maiúscula, 1 número e 1 caractere especial.',
+            'password.regex' => 'A senha deve conter uma letra maiúscula, um número e um caractere especial.',
         ]);
 
         $user = User::create([

@@ -4,6 +4,7 @@ use App\Http\Controllers\AtendimentoController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\PasswordResetController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\FilaController;
 use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\RegistroClinicoController;
@@ -176,3 +177,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/prontuario/{atendimento}/finalizar', [RegistroClinicoController::class, 'finalizar'])
         ->name('prontuario.finalizar');
 });
+
+
+\Illuminate\Support\Facades\Route::get('/register', [\App\Http\Controllers\Auth\RegisterController::class, 'show'])->name('register');
+
+\Illuminate\Support\Facades\Route::post('/register', [\App\Http\Controllers\Auth\RegisterController::class, 'store'])->name('register.store');
+

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida|Saúde — Criar conta</title>
-
     <style>
         * { box-sizing: border-box; }
 
@@ -13,41 +12,42 @@
             height: 100%;
             margin: 0;
             overflow: hidden;
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system,
-                BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             background: #020914;
             color: #eef7ff;
         }
 
         .page {
-            width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             display: grid;
             grid-template-columns: 1fr 1fr;
             background:
-                radial-gradient(circle at 24% 50%, rgba(23,142,190,.13), transparent 34%),
-                radial-gradient(circle at 76% 50%, rgba(23,142,190,.08), transparent 34%),
+                radial-gradient(circle at 25% 50%, rgba(23,142,190,.13), transparent 34%),
+                radial-gradient(circle at 75% 50%, rgba(23,142,190,.08), transparent 34%),
                 linear-gradient(135deg, #020914 0%, #061727 50%, #020914 100%);
         }
 
-        .brand {
+        .brand, .form {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 40px;
-            border-right: 1px solid rgba(115,190,220,.10);
-            text-align: center;
         }
 
-        .brand-inner {
-            width: min(560px, 100%);
+        .brand {
+            text-align: center;
+            border-right: 1px solid rgba(115,190,220,.10);
+        }
+
+        .brand-inner, .box {
+            width: min(470px, 100%);
         }
 
         .brand-name {
-            font-size: clamp(42px, 4vw, 56px);
+            font-size: 52px;
             font-weight: 800;
             letter-spacing: -3px;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
         .vida { color: #f5f9fc; }
@@ -69,24 +69,15 @@
 
         .brand h1 {
             margin: 25px 0 18px;
-            font-size: clamp(34px, 4vw, 54px);
+            font-size: 48px;
             line-height: 1.05;
             letter-spacing: -2.5px;
         }
 
         .brand p {
-            max-width: 470px;
-            margin: auto;
             color: #8aa5b5;
             font-size: 15px;
             line-height: 1.7;
-        }
-
-        .form-panel {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
         }
 
         .box {
@@ -96,32 +87,26 @@
         h2 {
             margin: 0;
             text-align: center;
-            color: #f3f8fb;
             font-size: 40px;
-            line-height: 1.08;
             letter-spacing: -1.5px;
         }
 
         .subtitle {
-            margin: 12px 0 27px;
+            margin: 12px 0 26px;
             text-align: center;
             color: #7893a3;
-            font-size: 16px;
         }
 
         .error {
             margin-bottom: 16px;
-            padding: 12px 14px;
+            padding: 12px;
             border: 1px solid rgba(239,91,91,.24);
             border-radius: 9px;
             background: rgba(130,25,32,.15);
             color: #ff9696;
-            font-size: 13px;
         }
 
-        .field {
-            margin-bottom: 17px;
-        }
+        .field { margin-bottom: 16px; }
 
         label {
             display: block;
@@ -136,8 +121,8 @@
             height: 52px;
             border: 1px solid rgba(130,171,190,.16);
             border-radius: 9px;
+            padding: 0 15px;
             outline: none;
-            padding: 0 16px;
             background: rgba(7,24,38,.80);
             color: #f1f8fb;
             font-size: 16px;
@@ -151,8 +136,8 @@
         .rules {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 7px 16px;
-            margin: 8px 0 20px;
+            gap: 6px 15px;
+            margin: 8px 0 18px;
             color: #607b8b;
             font-size: 12px;
         }
@@ -170,10 +155,9 @@
         }
 
         .back {
-            margin-top: 20px;
+            margin-top: 18px;
             text-align: center;
             color: #607b8a;
-            font-size: 15px;
         }
 
         a {
@@ -181,12 +165,8 @@
             text-decoration: none;
         }
 
-        a:hover {
-            color: #a5e9ff;
-        }
-
         .security {
-            margin-top: 22px;
+            margin-top: 20px;
             text-align: center;
             color: #4d6877;
             font-size: 13px;
@@ -196,8 +176,6 @@
             html, body { overflow: auto; }
 
             .page {
-                min-height: 100vh;
-                height: auto;
                 grid-template-columns: 1fr;
             }
 
@@ -207,18 +185,12 @@
                 border-bottom: 1px solid rgba(115,190,220,.10);
             }
 
-            .form-panel {
+            .form {
                 min-height: 64vh;
-                padding: 30px 20px;
-            }
-
-            h2 {
-                font-size: 34px;
             }
         }
     </style>
 </head>
-
 <body>
 <div class="page">
 
@@ -242,7 +214,7 @@
         </div>
     </section>
 
-    <section class="form-panel">
+    <section class="form">
         <div class="box">
 
             <h2>Criar conta</h2>
