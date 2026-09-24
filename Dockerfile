@@ -17,7 +17,7 @@ USER root
 
 WORKDIR /var/www/html
 
-COPY composer.json composer.lock ./
+COPY . .
 
 RUN composer install \
     --no-dev \
@@ -25,8 +25,6 @@ RUN composer install \
     --prefer-dist \
     --optimize-autoloader \
     --no-scripts
-
-COPY . .
 
 COPY --from=assets /app/public/build ./public/build
 
