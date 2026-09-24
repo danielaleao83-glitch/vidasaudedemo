@@ -1,4 +1,17 @@
-﻿FROM serversideup/php:8.5-fpm-nginx
+﻿FROM node:22-alpine AS assets
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci
+
+COPY vite.config.js ./
+COPY resources ./resources
+
+RUN npm run build
+
+
+FROM serversideup/php:8.5-fpm-nginx
 
 USER root
 
@@ -15,7 +28,10 @@ RUN composer install \
 
 COPY . .
 
-RUN mkdir -p database \
+COPY --from=assets /app/public/build ./public/build
+
+RUN mkdir -p \
+    database \
     storage/framework/cache \
     storage/framework/sessions \
     storage/framework/views \
@@ -23,7 +39,11 @@ RUN mkdir -p database \
     bootstrap/cache \
     && touch database/database.sqlite \
     && chown -R www-data:www-data /var/www/html \
-    && chmod -R ug+rwX storage bootstrap/cache database
+    && chmod -R ug+rwX \
+        database \
+        storage \
+        bootstrap/cache \
+        public/build
 
 USER www-data
 
