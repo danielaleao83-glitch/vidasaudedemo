@@ -1006,7 +1006,7 @@
             <p class="brand-description">
                 Plataforma integrada para gestão assistencial,
                 atendimento e prontuário eletrônico, conectando
-                informação clÃ­nica, operaÃ§Ã£o e cuidado.
+                informação clínica, operação e cuidado.
             </p>
 
             <div class="brand-footer">
@@ -1130,7 +1130,7 @@
                     <path d="m9.5 12 1.7 1.7 3.5-3.7"/>
                 </svg>
 
-                Ambiente protegido para informaÃ§Ãµes de saúde
+                Ambiente protegido para informações de saúde
             </div>
 
             <div class="login-exit">
@@ -1177,5 +1177,6 @@
 
 </body>
 </html>
+
 
 
