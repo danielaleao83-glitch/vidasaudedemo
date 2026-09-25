@@ -10,7 +10,7 @@ class FilaController extends Controller
     public function index()
     {
         $atendimentos = Atendimento::with('paciente')
-            ->where('status', 'aguardando')
+            ->where('status', 'aguardando')->limit(5)
             ->orderByRaw("
                 CASE prioridade
                     WHEN 'alta' THEN 1
@@ -30,7 +30,7 @@ class FilaController extends Controller
         if ($atendimento->status !== 'aguardando') {
             return redirect()
                 ->route('fila.index')
-                ->with('error', 'Este atendimento não está mais aguardando na fila.');
+                ->with('error', 'Este atendimento nÃ£o estÃ¡ mais aguardando na fila.');
         }
 
         $atendimento->status = 'chamando';
@@ -40,9 +40,11 @@ class FilaController extends Controller
             ->route('fila.index')
             ->with(
                 'success',
-                'Senha ' . $atendimento->senha . ' — ' .
+                'Senha ' . $atendimento->senha . ' â€” ' .
                 ($atendimento->paciente->nome ?? 'Paciente') .
                 ' foi chamada.'
             );
     }
 }
+
+

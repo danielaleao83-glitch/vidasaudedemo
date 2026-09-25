@@ -13,6 +13,7 @@ class AtendimentoController extends Controller
         $atendimentos = Atendimento::with('paciente')
             ->orderByDesc('data_atendimento')
             ->orderByDesc('id')
+            ->limit(15)
             ->get();
 
         return view('atendimentos.index', compact('atendimentos'));
@@ -20,7 +21,7 @@ class AtendimentoController extends Controller
 
     public function create()
     {
-        $pacientes = Paciente::orderBy('nome')->get();
+        $pacientes = Paciente::orderBy('nome')->limit(10)->get();
 
         return view('atendimentos.create', compact('pacientes'));
     }

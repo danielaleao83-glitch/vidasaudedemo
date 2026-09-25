@@ -21,6 +21,7 @@ class TriagemController extends Controller
                 END
             ")
             ->orderBy('created_at')
+            ->limit(5)
             ->get();
 
         return view('triagem.index', compact('atendimentos'));

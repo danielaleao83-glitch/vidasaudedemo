@@ -15,7 +15,7 @@ class PacienteController extends Controller
     {
         $pacientes = Paciente::query()
             ->orderBy('nome')
-            ->paginate(15);
+            ->paginate(10);
 
         return view('pacientes.index', compact('pacientes'));
     }
