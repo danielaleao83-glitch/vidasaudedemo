@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida|Saúde Ã¢â‚¬â€ ProntuÃƒÂ¡rio EletrÃƒÂ´nico</title>
+    <title>Vida|Saúde Ã¢â‚¬â€ Prontuário Eletrônico</title>
 
     <style>
         * {
@@ -1011,9 +1011,9 @@
 
             <div class="brand-footer">
                 <span class="brand-footer-line"></span>
-                <span>ProntuÃƒÂ¡rio EletrÃƒÂ´nico</span>
+                <span>Prontuário Eletrônico</span>
                 <span></span>
-                <span>GestÃƒÂ£o Assistencial</span>
+                <span>Gestão Assistencial</span>
             </div>
 
         </div>
@@ -1177,6 +1177,7 @@
 
 </body>
 </html>
+
 
 
 
